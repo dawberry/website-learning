@@ -1,2 +1,2 @@
 # Website
-Portfolio of website
+my web-dev learning journey
