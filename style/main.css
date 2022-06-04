@@ -1,0 +1,218 @@
+:root {
+    --main-color: rgba(14, 10, 24, 1);
+    --secondary-color: rgba(164, 58, 203, 1);
+    --white-color: rgba(233, 223, 224, 1);
+    --card-color: rgba(71, 23, 247, 1);
+}
+.heading{
+    height: 40vh;
+    background-image: url("/image/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 2px 2px 5px black;
+}
+.heading-title{
+    color: var(--white-color);
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    font-size: 2rem;
+}
+.plans {
+    width: 100%;
+}
+
+.plan-section {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 10px;
+    color: var(--main-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.plan-card {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    text-align: center;
+    width: 20rem;
+    max-width: 25rem;
+    margin-top: 30px;
+    vertical-align: middle;
+    border-radius: 10px;
+
+}
+
+.plan-title {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    margin-top: 10px;
+}
+
+.plan-fee {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+.plan-description {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+.plan-items {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.plan-item{
+    margin-top: 5px;
+    color: var(--white-color);
+}
+.plan-button{
+    margin: 10px 10px;
+    padding: 10px;
+    color: var(--white-color);
+    background-color: var(--card-color);
+    border-radius: 10px;
+}
+.plan-button:hover,
+.plan-button:active{
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+.recommended-plan{
+    background-color: var(--card-color);
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+.recommended-plan .plan-button{
+    background-color: var(--secondary-color);
+}
+.recommended-plan .plan-button:hover,
+.recommended-plan .plan-button:active{
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+.recommended-title{
+    text-align: center;
+    margin: 10px 10px;
+    color: var(--main-color);
+    background-color: var(--white-color);
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+}
+.reasons-section{
+    background-color: var(--main-color);
+    margin: 15px 0;
+}
+.reason-title{
+    color: var(--white-color);
+    margin: 15px 0px;
+
+}
+.reason-item{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+.reason-item p{
+    color: var(--white-color);
+    font-size: 1.2rem;  
+    margin: 10px 0;  
+}
+.reason-item div{
+    width: 150px;
+    height: 150px;
+    background-color: var(--white-color);
+    border: 2px solid var(--card-color);
+    border-radius: 50%;
+    margin: auto;
+}
+.drawer-btn{
+    color: white;
+}
+.btn-line{
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin: 3px;
+}
+@media (max-width: 768px) {
+    .plan-card{
+        display: block;
+        width: 100%;
+    }
+    .recommended-title{
+        margin: 10px 10px;
+    }
+    .reason-item {
+        display: block;
+        margin: auto;
+    }
+    .reason-item div{
+        width: 200px;
+        height: 200px;        
+    }
+    .reason-item img{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+    .reason-items{
+        text-align: center;
+        padding: 0;
+    }
+    .reasons-section{
+        text-align: end;
+    }
+    .plan-section {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 1230px) and (min-width: 768px) {
+    .plan-card{
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+    .recommended-title{
+        margin: 10px 10px;
+    }
+    .plan-title{
+        font-size: 2.2rem;
+    }
+    .plan-section {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    /* .reason-item {
+        display: block;
+        margin: auto;
+    }
+    .reason-item div{
+        width: 200px;
+        height: 200px;
+        
+    }
+    .reason-item img{
+        width: 200px;
+        height: 200px;
+    }
+    .reason-items{
+        text-align: center;
+    } */
+    
+}

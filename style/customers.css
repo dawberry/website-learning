@@ -1,0 +1,69 @@
+:root {
+    --main-color: rgba(14, 10, 24, 1);
+    --secondary-color: rgba(164, 58, 203, 1);
+    --white-color: rgba(233, 223, 224, 1);
+    --card-color: rgba(71, 23, 247, 1);
+}
+.customer-image{
+    width: 100%;
+}
+.customer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.customer1{
+    display: flex;
+}
+.customer2{
+    display: flex;
+    justify-content: space-between;
+}
+.customer-image-section{
+    width: 60%;
+    margin: 20px 0;
+}
+.customer-comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 50px;
+    text-align: left;
+}
+.customer2-comment{
+    text-align: right;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+h1{
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+p{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+@media (max-width: 750px) {
+    .customer{
+        display: flex;
+        flex-direction: column;
+    }
+    .customer-image{
+        width: 100vw;
+    }
+    .customer2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .customer2-comment{
+        text-align: center;
+        margin: 0 50px;
+    }
+    .customer-comment{
+        text-align: center;
+        margin: 0 50px;
+    }
+}
